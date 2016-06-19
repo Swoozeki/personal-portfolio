@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+.container{
+  display:flex;
+  font-family: 'Lora', serif;
+  font-weight:250;
+  line-height:25px;
+  //justify-content:center;
+}
+.sidebar{
+  position:fixed;
+}
+.sidebar p{
+  margin:0;
+  padding:15px 10px;
+  color:white;
+}
+.sidebar #about-button{
+  background-color:#3498db;
+}
+.sidebar #portfolio-button{
+  background-color:#8e44ad;
+}
+.sidebar #contact-button{
+  background-color:#2ecc71;
+}
+
+.social-media{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.social-media a{
+  margin:5px 0;
+  color:white;
+  text-decoration:none;
+}
+
+.social-media a i{
+  font-size:22px;
+  height:40px;
+  width:40px;
+  border-radius:50%;
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.fa-github{
+  background-color:#1D1F20;
+}
+.fa-facebook{
+  background-color:#45619D;
+}
+.fa-linkedin{
+  background-color:#1B86BC;
+}
+a{
+  //color:white;
+  text-decoration:none;
+}
+
+
+#main-content{
+  max-width:600px;
+  margin-left:85px;
+  padding:5px 10px;
+  
+  color:white;
+  background-color:#3498db;
+  border-radius:0 20px 20px 0;
+}
+#about-me img{
+  float:left;
+  margin-right:12px;
+  height:200px;
+}
+#about-me .fa-youtube-play{
+  color:red;
+  font-size:25px;
+}
+#contact-me{
+  display:none;
+}
+
+#portfolio{
+  display:none;
+  max-width:500px;
+}
+#about-button,#portfolio-button,#contact-button{
+  cursor:pointer;
+}
+.panel{
+  background-color:rgba(0,0,0,0.5);
+  padding:5px;
+  margin:5px;
+}
+.panel:hover{
+  background-color:rgba(0,0,0,0.7);
+  
+}
+.panel .thumbnail{
+  width:100%;
+  
+}
+.panel .caption{
+  text-align:center;
+}
+@media(max-width:600px){
+  #about-me img{
+    width:100%;
+    height:auto;
+  }
+}
