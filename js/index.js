@@ -1,30 +1,17 @@
-var $btn=document.getElementsByClassName("btn");
-var $aboutMe=document.getElementById("about-me");
-var $contactMe=document.getElementById("contact-me");
-var $portfolio=document.getElementById("portfolio");
-var $mainContent=document.getElementById("main-content");
+const $buttons= document.querySelectorAll('.btn');
+const $articles= document.querySelectorAll('#main-content article');
 
-for(var i=0; i<3; i++){
-  $btn[i].addEventListener("click",showClickedContent);
-}
+// if(window.location.hash)
+//   $buttons.forEach($button => {
+//     if($button.dataset.target===window.location.hash.slice(1)) showClickedContent.apply($button);
+//   });
+  
+$buttons.forEach($button => $button.addEventListener('click', showClickedContent));
 
 function showClickedContent(){
-  var id=this.getAttribute("id");
+  var $chosen=document.getElementById(this.dataset.target);
+  $articles.forEach($article => $article.style.display='none');
   
-  $aboutMe.style.display="none";
-  $portfolio.style.display="none";
-  $contactMe.style.display="none";
-  
-  if(id==="about-button"){
-    $mainContent.style.backgroundColor="#3498db";
-    $aboutMe.style.display="block";
-  }
-  if(id==="portfolio-button"){
-    $mainContent.style.backgroundColor="#8e44ad";
-    $portfolio.style.display="block";
-  }
-  if(id==="contact-button"){
-    $mainContent.style.backgroundColor="#2ecc71";
-    $contactMe.style.display="block";
-  }
+  $chosen.style.display='block';
+  // if(window.location.hash) window.location.hash='#'+this.dataset.target;
 }

@@ -1,27 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Lora);
 .container{
   display:flex;
+  /* justify-content: center; */
+
   font-family: 'Lora', serif;
-  font-weight:250;
-  line-height:25px;
-  //justify-content:center;
+  line-height:30px;
 }
 .sidebar{
-  position:fixed;
+  
 }
-.sidebar p{
+.sidebar .btn{
   margin:0;
-  padding:15px 10px;
+  padding:10px 15px;
   color:white;
-}
-.sidebar #about-button{
-  background-color:#3498db;
-}
-.sidebar #portfolio-button{
-  background-color:#8e44ad;
-}
-.sidebar #contact-button{
-  background-color:#2ecc71;
+
+  cursor: pointer;
 }
 
 .social-media{
@@ -31,64 +24,66 @@
 }
 .social-media a{
   margin:5px 0;
-  color:white;
-  text-decoration:none;
-}
-
-.social-media a i{
+  color:#fff;
   font-size:22px;
   height:40px;
   width:40px;
   border-radius:50%;
+  text-decoration:none;
   
   display:flex;
   align-items:center;
   justify-content:center;
 }
-.fa-github{
+#github{
   background-color:#1D1F20;
 }
-.fa-facebook{
+#facebook{
   background-color:#45619D;
 }
-.fa-linkedin{
+#linkedin{
   background-color:#1B86BC;
-}
-a{
-  //color:white;
-  text-decoration:none;
 }
 
 
 #main-content{
   max-width:600px;
-  margin-left:85px;
-  padding:5px 10px;
-  
   color:white;
-  background-color:#3498db;
   border-radius:0 20px 20px 0;
 }
-#about-me img{
+#main-content article{
+  padding: 10px;
+  width: inherit;
+  border-radius: inherit;
+}
+#about-me, #about-button{
+  background-color:#3498db;
+}
+#portfolio, #portfolio-button{
+  background-color:#8e44ad;
+}
+#contact-me, #contact-button{
+  background-color:#2ecc71;
+}
+#about-me #profile{
   float:left;
   margin-right:12px;
   height:200px;
+}
+@media(max-width:400px){
+  #about-me #profile{
+    width: 100%;
+    height: initial;
+  }
 }
 #about-me .fa-youtube-play{
   color:red;
   font-size:25px;
 }
-#contact-me{
+#contact-me, #portfolio{
   display:none;
 }
 
-#portfolio{
-  display:none;
-  max-width:500px;
-}
-#about-button,#portfolio-button,#contact-button{
-  cursor:pointer;
-}
 .panel{
   background-color:rgba(0,0,0,0.5);
   padding:5px;
@@ -96,7 +91,6 @@ a{
 }
 .panel:hover{
   background-color:rgba(0,0,0,0.7);
-  
 }
 .panel .thumbnail{
   width:100%;
@@ -105,9 +99,4 @@ a{
 .panel .caption{
   text-align:center;
 }
-@media(max-width:600px){
-  #about-me img{
-    width:100%;
-    height:auto;
-  }
-}
+
