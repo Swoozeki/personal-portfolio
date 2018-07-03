@@ -6,9 +6,10 @@
     --first-level: 0px 2px 5px #000;
     --second-level: 0px 5px 10px #000;
 }
-
 body {
     margin: 0;
+}
+.container{
     overflow-x: hidden;
     background: var(--primary-color);
     background: radial-gradient(var(--primary-color), var(--primary-highlight-color));
