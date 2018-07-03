@@ -96,11 +96,7 @@ section:not(:first-of-type){
 #title {
     margin: 0px;
     font-size: 10vmax;
-    background-color: var(--secondary-color);
-    background-image: url('../media/title-background.png');
-    background-clip: text;
     color: var(--secondary-color); 
-    color: transparent;
 }
 
 #tag {
