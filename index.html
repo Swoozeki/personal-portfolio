@@ -17,10 +17,17 @@
         <div id="nav-bar" data-aos="fade-down">
             <nav id="main-menu" class="menu-desktop">
                 <i id="hamburger" class="fas fa-2x fa-bars"></i>
-                <a href="#home" class="menu-item active">HOME</a>
-                <a href="#portfolio" class="menu-item">PORTFOLIO</a>
-                <a href="#about" class="menu-item">ABOUT</a>
-                <a href="#contact" class="menu-item">CONTACT</a>
+                <div class="social-media">
+                    <a href="https://github.com/swoozeki" class="menu-item">
+                        <i class="fab fa-lg fa-github-alt"></i>
+                    </a>
+                    <a href="https://codepen.io/swoozeki" class="menu-item">
+                        <i class="fab fa-lg fa-codepen"></i>
+                    </a>
+                </div>
+                <a href="#about" class="menu-item">About</a>
+                <a href="#portfolio" class="menu-item">Portfolio</a>
+                <a href="#contact" class="menu-item">Contact</a>
             </nav>
         </div>
 
@@ -28,11 +35,29 @@
             <h1 id="title">swoozeki</h1>
             <h3 id="tag" data-aos="fade-up">a fullstack web developer</h3>
             <div class="portal">
-                <a href="#portfolio">
-                    <i class="fas fa-2x fa-angle-down"></i>
+                <a href="#about">
+                    <i class="fas fa-3x fa-angle-down"></i>
                 </a>
             </div>
         </section>
+
+        <section id="about" data-aos="fade-right">
+            <h2 class="section-headline">ABOUT ME</h2>
+            <img id="about-photo" src="media/me.jpeg" alt="my photo" data-aos="flip-down">
+
+            <div class="article-container">
+
+                <p>
+                    Hello, I am a developer from Toronto. I create websites and web applications that are fast, secure, and mobile-responsive.
+                    I've been programming for about 4 years total, and web development specifically for 2 years.
+                </p>
+                <p>
+                    
+                </p>
+
+            </div>
+        </section>
+
 
         <section id="portfolio" data-aos="fade-right">
             <h2 class="section-headline">FEATURED PROJECTS</h2>
@@ -220,21 +245,83 @@
             </div>
         </section>
 
-        <section id="about" data-aos="fade-left">
-            <h2 class="section-headline">ABOUT ME</h2>
-
-            <div class="article-container">
-                <img id="about-photo" src="media/me.jpeg" alt="my photo">
-                <div>
-                    <p>
-                        Hello, I am a developer from Toronto. I create websites and web applications that are mobile-responsive, fast, and secure.
-                        I've been programming for about 4 years total, and web development specifically for 2 years.
-                    </p>
-                    <p>
-
-                    </p>
+        <section id="skills">
+            <div id="languages">
+                <h2>Languages</h2>
+                <div class="background">
+                    <p class="hover-text">HOVER</p>
+                    <div class="article-container">
+                        <div class="skill">
+                            <h3>HTML/Pug</h3>
+                        </div>
+                        <div class="skill">
+                            <h3>CSS/Sass</h3>
+                            <p>- box model, flexbox, grid, animation</p>
+                        </div>
+                        <div class="skill">
+                            <h3>Javascript</h3>
+                            <p>- functional programming, closure, scope, prototypal inheritence</p>
+                        </div>
+                        <div class="skill">
+                            <h3>NodeJS</h3>
+                            <p>- asynchronous workflow, file system, modules</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div id="frameworks">
+                <h2>Frameworks</h2>
+                <div class="background">
+                    <p class="hover-text">HOVER</p>
+                    <div class="article-container">
+                        <div class="skill">
+                            <h3>Bootstrap</h3>
+                        </div>
+                        <div class="skill">
+                            <h3>jQuery</h3>
+                        </div>
+                        <div class="skill">
+                            <h3>ReactJS</h3>
+                            <p>- virtual DOM, reusable components, state, prop, lifecycle methods</p>
+                        </div>
+                        <div class="skill">
+                            <h3>ExpressJS</h3>
+                            <p>- middleware, templating engine, router</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tools">
+                <h2>Tools</h2>
+                <div class="background">
+                    <p class="hover-text">HOVER</p>
+                    <div class="article-container">
+                        <div class="skill">
+                            <h3>VSCode</h3>
+                            <p>Code Editor</p>
+                        </div>
+                        <div class="skill">
+                            <h3>Command Line</h3>
+                            <p>file navigation, text manipulation, SSH</p>
+                        </div>
+                        <div class="skill">
+                            <h3>npm</h3>
+                            <p>package management, npm scripts</p>
+                        </div>
+                        <div class="skill">
+                            <h3>git/Github</h3>
+                        </div>
+                        <div class="skill">
+                            <h3>Webpack</h3>
+                            <p>module bundler, loaders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" data-aos="fade-up">
+
         </section>
     </div>
 
