@@ -442,7 +442,7 @@ section:not(:first-of-type){
     #main-menu .menu-item:hover {
         background-color: var(--secondary-color);
     }
-    .social-media>#main-menu .menu-item {
+    .social-media>.menu-item {
         float: none;
     }
     #main-menu.open {
@@ -453,7 +453,7 @@ section:not(:first-of-type){
     #main-menu.open>#hamburger {
         color: #000;
     }
-    #main-menu.open>#main-menu .menu-item, #main-menu.open>.social-media>#main-menu .menu-item {
+    #main-menu.open>.menu-item, #main-menu.open>.social-media>.menu-item {
         display: block;
     }
 
