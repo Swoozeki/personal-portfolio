@@ -292,7 +292,7 @@ section:not(:first-of-type){
     background-size: cover;
     background-attachment: fixed;
 
-    height: 500px;
+    height: 550px;
     overflow: hidden;
 }
 #skills .background:hover{
@@ -332,7 +332,6 @@ section:not(:first-of-type){
     transform: translateY(-1000px);
     transition: transform 500ms;
 
-    height: 100%;
     background-color: rgba(255, 245, 90, 0.9);
 }
 #skills .background:hover .article-container{
@@ -393,6 +392,13 @@ section:not(:first-of-type){
 
 /* ---- media queries ---- */
 @media(max-width: 800px) {
+    .split-equal{
+        display: initial;
+    }
+    .split-equal > *:not(:last-of-type){
+        margin-right: initial;
+    }
+
     #nav-bar {
         padding: 10px;
     }
