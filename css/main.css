@@ -32,6 +32,34 @@ h3{
 a{
     text-decoration: none;
 }
+.links-primary a{
+    padding: 5px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+    color: inherit;
+    transition: 500ms border ease-out;
+}
+.links-primary a:hover{
+    border-bottom-color: var(--secondary-color);
+}
+.links-secondary{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.links-secondary a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;    
+
+    color: inherit;
+}
+.links-secondary a i{
+    margin-right: 10px;
+}
 
 .primary-color {
     color: var(--primary-color);
@@ -94,7 +122,6 @@ section:not(:first-of-type){
 .menu-item {
     padding: 5px;
     border-bottom: 5px solid rgba(0, 0, 0, 0);
-    text-decoration: none;
     color: inherit;
     transition: 500ms border ease-out;
 }
@@ -150,7 +177,6 @@ section:not(:first-of-type){
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
     color: #fff;
 }
 .portal a i {
@@ -176,11 +202,19 @@ section:not(:first-of-type){
 
 .project.active {
     display: flex;
+    align-items: center;
 }
 
 .project-images {
     display: flex;
     margin-right: 20px;
+}
+.project-info .links-secondary a{
+    background-color: #000;
+    color: #fff;
+}
+.project-info .links-secondary a:hover{
+    color: var(--secondary-color);
 }
 
 /* ----- project display window ------ */
@@ -350,24 +384,15 @@ section:not(:first-of-type){
     margin-top: 200px;
     margin-bottom: 100px;
 }
-#contact div{
-    display: flex;
-    justify-content: center;
+#contact .links-secondary{
     flex-wrap: wrap;
 }
-.contact-item{
-    padding: 10px;
-    margin: 5px;
-    border-radius: 20px;    
-    background-color: #fff;
 
-    color: #000;
+#contact .links-secondary a{
+    background-color: #fff;
 }
-.contact-item:hover{
+#contact .links-secondary a:hover{
     background-color: var(--secondary-color);
-}
-.contact-item i{
-    margin-right: 20px;
 }
 
 /* ---- footer section ---- */
@@ -393,10 +418,10 @@ section:not(:first-of-type){
 
 /* ---- media queries ---- */
 @media(max-width: 800px) {
-    .split-equal{
+    .split-equal.split-equal-lg{
         display: initial;
     }
-    .split-equal > *:not(:last-of-type){
+    .split-equal.split-equal-lg > *:not(:last-of-type){
         margin-right: initial;
     }
 
@@ -474,7 +499,6 @@ section:not(:first-of-type){
     }
     #main-menu.open {
         background-color: #fff;
-        height: 95vh;
         box-shadow: var(--first-level);
     }
     #main-menu.open>#hamburger {
