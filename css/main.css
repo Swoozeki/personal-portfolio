@@ -47,6 +47,16 @@ a{
     text-align: right;
 }
 
+.split-equal{
+    display: flex;
+}
+.split-equal > *{
+    flex: 1;
+}
+.split-equal > *:not(:last-of-type){
+    margin-right: 10px;
+}
+
 .section-headline {
     padding: 20px 0px;
     text-align: center;
@@ -70,7 +80,7 @@ section:not(:first-of-type){
     right: 0;
     padding: 20px;
 
-    z-index: 2;
+    z-index: 1;
 }
 
 #main-menu {
@@ -233,21 +243,28 @@ section:not(:first-of-type){
     flex-direction: column;
 
     margin-top: 50px;
-    margin-bottom: -125px;
 }
 #about-photo{
+    z-index: 1;
     align-self: center;
     
     border-radius: 50%;
     width: 250px;
     height: 250px;
 }
+
 #about .article-container{
+    padding: 50px 20px;
+    
+    text-align: center;
+    margin-bottom: 10px;
+}
+#about #about-photo + .article-container{
     position: relative;
     top: -125px;
 
+    margin-bottom: calc(-125px + 10px);
     padding-top: 125px;
-    z-index: -1;
 }
 
 /* ----- skills section ----- */
@@ -411,6 +428,9 @@ section:not(:first-of-type){
     }
     #about .article-container{
         display: block;
+
+        padding: 50px 20px;
+        /* text-align: initial; */
     }
 
     #skills{
